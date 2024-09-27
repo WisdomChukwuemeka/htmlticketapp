@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket booking</title>
+</head>
+<body>
+    <h1>Ticket book</h1>
+    <form action="" id="purchaseform">
+        <input type="text" name="" id="" placeholder="Name" required> <br>
+        <br>
+
+        <select name="" id="">
+            <option value="">No of Ticket</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select><br>
+        <br>
+
+        <select name="" id="">
+            <option value="">No of seat</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select>
+        <br><br>
+
+        <label for="">Time:</label>
+        <input type="time" name="Time" id="">
+        <br><br>
+
+        <input type="text" name="" id="" placeholder="Movie Title" required>
+        <br><br>
+
+        <input type="submit" id="purchase-btn" value="Purchase Ticket">
+    </form>
+    <script>
+        document.getElementById('purchaseform').onsubmit = function (){
+            alert('Ticket processing');
+        }
+    </script>
+
+</body>
+</html>
