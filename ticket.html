@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ticket book</h1>
-    <form action="" id="purchaseform">
-        <input type="text" name="" id="" placeholder="Name" required> <br>
+    <div class="container">
+        <div class="container1">
+        <h1>Ticket booking</h1>
+    <form class="form" action="" id="purchaseform">
+        <input class="name" type="text" name="" id="" placeholder="Name" required> <br>
         <br>
 
         <select name="" id="">
@@ -29,15 +32,26 @@
         </select>
         <br><br>
 
-        <label for="">Time:</label>
+        <label for="">Time:</label> <br>
         <input type="time" name="Time" id="">
         <br><br>
 
-        <input type="text" name="" id="" placeholder="Movie Title" required>
+        <label for="">Male</label>
+        <input type="radio" name="" id="" required>
+        <br>
+
+        <label for="">Female</label>
+        <input type="radio" name="" id="">
         <br><br>
 
-        <input type="submit" id="purchase-btn" value="Purchase Ticket">
+        <input class="movie" type="text" name="" id="" placeholder="Movie Title" required>
+        <br><br>
+        
+
+        <input class="button" type="submit" id="purchase-btn" value="Purchase Ticket">
     </form>
+    </div>
+    </div>
     <script>
         document.getElementById('purchaseform').onsubmit = function (){
             alert('Ticket processing');
